@@ -15,6 +15,12 @@ class ClientTest(unittest.TestCase):
       {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
     ]
     """ ------------ Add the assertion below ------------ """
+    def test_getDataPoint_calculatePrice(self):
+         new_quotes = [
+      {'top_ask': {'price': 122.5, 'size': 40}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 119.75, 'size': 100}, 'id': '0.109974697771', 'stock': 'GHI'},
+      {'top_ask': {'price': 119.3, 'size': 10}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 118.1, 'size': 70}, 'id': '0.109974697771', 'stock': 'JKL'}
+    ]
+
 
 
   """ ------------ Add more unit tests ------------ """
